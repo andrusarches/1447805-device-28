@@ -2,35 +2,48 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Интернет-магазин гаджетов Девайс</title>
+    <title>Интернет-магазин гаджетов «Девайс»</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
 
     <!-- Page Header -->
-    <div class="content-wrapper header-background">
-      <header class="page-header">
+    <div class="content-wrapper">
+      <header class="page-header-main">
         <nav class="site-menu">
-          <a class="header-logo">
-            <img src="img/logo-header.svg" alt="Логотип интернет-магазин гаджетов Девайс" width="163" height="35">
+          <a class=" header-logo">
+            <img src="img/logo-header.svg" alt="Логотип интернет-магазин гаджетов «Девайс»" width="163" height="35">
           </a>
           <ul class="nav-first-row">
             <li>
               <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                 <label for="input-search" class="visually-hidden">Поиск по сайту</label>
-                <input type="text" type="search" class="input-search" id="input-search" name="input-search" placeholder="Поиск по сайту">
+                <input type="search" class="input-search" id="input-search" name="input-search" placeholder="Поиск по сайту" required>
+                <button class="input-search-submit" type="submit" name="input-search-submit">Найти</button>
               </form>
             </li>
-            <li><a href="blank.html" class="link-nav-first">Войти</a></li>
-            <li><a href="blank.html" class="link-nav-first">Сравнить</a></li>
-            <li><a href="blank.html" class="link-nav-first">Корзина</a></li>
+            <li class="header-login-cart-item"><a class="header-menu-link header-login" href="blank.html">Войти</a></li>
+            <li class="header-login-cart-item"><a class="header-menu-link header-compare" href="blank.html">Сравнить</a></li>
+            <li class="header-login-cart-item"><a class="header-menu-link header-cart" href="blank.html">Корзина</a></li>
           </ul>
           <ul class="nav-second-row">
-            <li><a href="blank.html" class="link-nav-second">Каталог</a></li>
-            <li><a href="blank.html" class="link-nav-second">Доставка</a></li>
-            <li><a href="blank.html" class="link-nav-second">Гарантия</a></li>
-            <li><a href="blank.html" class="link-nav-second">Контакты</a></li>
+            <li class="menu-catalog">
+              <a class="nav-second-row-link menu-catalog-link" href="catalog.html">Каталог товаров</a>
+              <div class="dropdown-catalog-menu">
+                <ul class="dropdown-catalog-menu-list">
+                  <li><a href="blank.html" class="link-basic-opacity">Виртуальная реальность</a></li>
+                  <li><a href="blank.html" class="link-basic-opacity">Фитнес-браслеты</a></li>
+                  <li><a href="blank.html" class="link-basic-opacity">Квадрокоптер</a></li>
+                  <li><a href="blank.html" class="link-basic-opacity">Моноподы для селфи</a></li>
+                  <li><a href="blank.html" class="link-basic-opacity">Умные часы</a></li>
+                  <li><a href="blank.html" class="link-basic-opacity">Экшн&#8209;камеры</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="nav-second-row-link" href="blank.html">Доставка</a></li>
+            <li><a class="nav-second-row-link" href="blank.html">Гарантия</a></li>
+            <li><a class="nav-second-row-link" href="blank.html">Контакты</a></li>
           </ul>
         </nav>
       </header>
@@ -40,8 +53,9 @@
 
     <main class="page-main">
       <div class="content-wrapper">
+        <h1 class="visually-hidden">Главная страница интернет-магазина гаджетов «Девайс»</h1>
         <section class="promo-slider">
-          <h2 class="visually-hidden">Промо-слайдер товаров интернет-магазина гаджетов Девайс</h2>
+          <h2 class="visually-hidden">Промо-слайдер товаров интернет-магазина гаджетов «Девайс»</h2>
           <input class="slider-input slider-input-1" type="radio" id="promo-slide-1" name="promo-slider" checked>
           <input class="slider-input slider-input-2" type="radio" id="promo-slide-2" name="promo-slider">
           <input class="slider-input slider-input-3" type="radio" id="promo-slide-3" name="promo-slider">
@@ -61,7 +75,7 @@
               <p class="promo-item-description">
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь&nbsp;(Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
-              <a href="blank.html" class="button-basic">ПОДРОБНЕЕ</a>
+              <a href="blank.html" class="button-basic button-basic-slider">ПОДРОБНЕЕ</a>
               <table class="promo-item-features gilroy-light">
                 <tr>
                   <td>8,5 м</td>
@@ -102,7 +116,7 @@
           </article>
           <article class="promo-slider-article slider-3">
             <h3 class="visually-hidden">Квадрокоптер</h3>
-            <img src="img/slider-3.png" width="526" height="334" alt="Фотография товара - Квадрокоптер">
+            <img src="img/slider-3.png" width="526" height="334" alt="Фотография товара - Квадрокоптер с лазером">
             <div class="promo-slider-item">
               <span class="promo-slider-rectangle"></span>
               <p class="gilroy-bold promo-item-slogan">
@@ -127,6 +141,7 @@
           </article>
         </section>
         <section class="item-types-selection">
+          <h2 class="visually-hidden">Типы товаров, представленных в каталоге интернет-магазина гаджетов «Девайс»</h2>
           <ul class="item-types">
             <li class="item-type">
               <article>
@@ -180,15 +195,15 @@
         </section>
       </div>
       <section class="business-services">
+        <h2 class="visually-hidden">Сервис-услуги интернет-магазина гаджетов «Девайс»</h2>
         <div class="content-wrapper">
           <input class="services-input service-input-1" type="radio" id="service-option-1" name="service-slides" checked>
           <input class="services-input service-input-2" type="radio" id="service-option-2" name="service-slides">
           <input class="services-input service-input-3" type="radio" id="service-option-3" name="service-slides">
           <ul class="services-selector">
             <li><label class="service-option service-option-1" for="service-option-1"><span>ДОСТАВКА</span></label></li>
-            <li><label class="service-option service-option-2" for="service-option-2"><span>ГАРАНТИЯ</span></label><li>
-            <li><label class="service-option service-option-3" for="service-option-3"><span>КРЕДИТ</span></label></li>
-              <!-- <a class="service-option-link" href="blank.hrml"><span>КРЕДИТ</span></a></li> -->
+            <li><label class="service-option service-option-2" for="service-option-2"><span class="button-basic">ГАРАНТИЯ</span></label></li>
+            <li><label class="service-option service-option-3" for="service-option-3"><span class="button-basic">КРЕДИТ</span></label></li>
           </ul>
           <article class="service-description service-description-1">
             <h3>Доставка</h3>
@@ -208,18 +223,19 @@
       <!-- Manufacturers' Logos -->
       <div class="content-wrapper">
         <section class="manufacturers">
+          <h2 class="visually-hidden">Логотипы производителей, товары которых представлены в интернет-магазине гаджетов «Девайс»</h2>
           <ul class="manufacturer-list">
             <li class="manufacturer">
-              <a class="manufacturer-logo logo-dji" href="blank.html"></a>
+              <a class="manufacturer-logo logo-dji" href="blank.html" aria-label="Логотип компании DJI"></a>
             </li>
             <li>
-              <a class="manufacturer-logo logo-sp-gadgets" href="blank.html"></a>
+              <a class="manufacturer-logo logo-sp-gadgets" href="blank.html" aria-label="Логотип компании SP Gadgets"></a>
             </li>
             <li>
-              <a class="manufacturer-logo logo-go-pro" href="blank.html"></a>
+              <a class="manufacturer-logo logo-go-pro" href="blank.html" aria-label="Логотип компании GO PRO"></a>
             </li>
             <li>
-              <a class="manufacturer-logo logo-vive" href="blank.html"></a>
+              <a class="manufacturer-logo logo-vive" href="blank.html" aria-label="Логотип компании VIVE"></a>
             </li>
           </ul>
         </section>
@@ -229,17 +245,17 @@
             <p class="about-contacts-description">Огромный выбор гаджетов не оставит равнодушным гика, который&nbsp;есть в каждом из нас.</p>
             <p class="about-contacts-description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
             <ul class="delivery-partners-list">
-              <li><a href="blank.html">Деловые линии</a></li>
-              <li><a href="blank.html">Автотрейдинг</a></li>
-              <li><a href="blank.html">ЖелДорЭкспедиция</a></li>
+              <li class="delivery-partner-name"><a class="link-basic-opacity" href="blank.html">Деловые линии</a></li>
+              <li class="delivery-partner-name"><a class="link-basic-opacity" href="blank.html">Автотрейдинг</a></li>
+              <li class="delivery-partner-name"><a class="link-basic-opacity" href="blank.html">ЖелДорЭкспедиция</a></li>
             </ul>
             <a href="blank.html" class="button-basic">ПОДРОБНЕЕ О НАС</a>
           </section>
           <section class="contacts">
             <h2 class="about-contacts-heading">Контакты</h2>
             <p class="about-contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <div class="contacts-map"></div>
-            <a href="blank.html" class="button-basic">НАПИШИТЕ НАМ</a>
+            <a class="contacts-map" aria-label="Кнопка-картинка с расположением магазина Девайс на карте по адресу г.Москва, ул. Строителей, д. 15"></a>
+            <a href="blank.html" class="button-basic feedback-button">НАПИШИТЕ НАМ</a>
           </section>
         </div>
       </div>
@@ -248,52 +264,79 @@
     <!-- Page Footer -->
     <footer class="page-footer">
       <div class="content-wrapper footer-content">
-        <div class="footer-first-column">
+        <div class="footer-first-row">
           <a class="footer-logo">
-            <img src="img/logo-footer.svg" alt="Логотип интернет-магазин гаджетов Девайс" width="163" height="35">
+            <img src="img/logo-footer.svg" alt="Логотип интернет-магазин гаджетов «Девайс»" width="163" height="35">
           </a>
-          <p class="footer-address">г. Москва, ул. Строителей, 15</p>
-          <span class="line-yellow"></span>
-        </div>
-        <div class="footer-second-column">
-          <ul class="footer-business-info">
-            <li><a class="footer-business-info-link" href="blank.html">ДОСТАВКА</a></li>
-            <li><a class="footer-business-info-link" href="blank.html">ГАРАНТИЯ</a></li>
-            <li><a class="footer-business-info-link" href="blank.html">КОНТАКТЫ</a></li>
-          </ul>
-          <ul class="footer-social">
-            <li>
-              <a href="blank.html" class="footer-social-link" aria-label="Магазин Девайс в Фейсбук">
-                <img src="img/icon-fb.svg" alt="Логотип Facebook" width="32" height="32">
-              </a>
-            </li>
-            <li>
-              <a href="blank.html" class="footer-social-link" aria-label="Магазин Девайс в Инстаграм">
-                <img src="img/icon-insta.svg" alt="Логотип Instagram" width="32" height="32">
-              </a>
-            </li>
-            <li>
-              <a href="blank.html" class="footer-social-link" aria-label="Магазин Девайс в Твиттер">
-                <img src="img/icon-twitter.svg" alt="Логотип Twitter" width="32" height="32">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-third-column">
           <ul class="footer-login-cart">
             <li><a class="footer-menu-link footer-login" href="blank.html">Войти</a></li>
             <li><a class="footer-menu-link footer-compare" href="blank.html">Сравнить</a></li>
             <li><a class="footer-menu-link footer-cart" href="blank.html">Корзина</a></li>
           </ul>
+        </div>
+        <div class="footer-second-row">
+          <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-business-info">
+            <li><a class="footer-business-info-link" href="blank.html">ДОСТАВКА</a></li>
+            <li><a class="footer-business-info-link" href="blank.html">ГАРАНТИЯ</a></li>
+            <li><a class="footer-business-info-link" href="blank.html">КОНТАКТЫ</a></li>
+          </ul>
           <a class="footer-phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+        <div class="footer-third-row">
+          <span class="line-yellow"></span>
+          <ul class="footer-social">
+            <li>
+              <a href="blank.html" class="footer-social-link" aria-label="Магазин «Девайс» в Фейсбук">
+                <img src="img/icon-fb.svg" alt="Логотип Facebook" width="32" height="32">
+              </a>
+            </li>
+            <li>
+              <a href="blank.html" class="footer-social-link" aria-label="Магазин «Девайс» в Инстаграм">
+                <img src="img/icon-insta.svg" alt="Логотип Instagram" width="32" height="32">
+              </a>
+            </li>
+            <li>
+              <a href="blank.html" class="footer-social-link" aria-label="Магазин «Девайс» в Твиттер">
+                <img src="img/icon-twitter.svg" alt="Логотип Twitter" width="32" height="32">
+              </a>
+            </li>
+          </ul>
           <a class="logo-html-academy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-academy.svg" alt="Логотип «HTML Academy»" width="27" height="34"></a>
         </div>
       </div>
     </footer>
 
-  <!-- Map Pop-up -->
-  <section class="pop-up-map"></section>
-  <section class="pop-up-feedback"></section>
-  <script src="js/script.js"></script>
+    <!-- Map Pop-up -->
+    <div class="pop-up-overlay"></div>
+    <section class="pop-up-map">
+      <h2 class="visually-hidden">Всплывающее окно - интерактивная карта</h2>
+      <div class="google-maps" id="map"></div>
+    </section>
+    <section class="pop-up-feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend class="pop-up-legend">Ваше имя:</legend>
+          <label class="visually-hidden" for="feedback-name">Поле ввода имени и фамилии</label>
+          <input class="pop-up-input feedback-input-name" name="feedback-name" id="feedback-name" type="text" placeholder="Имя Фамилия" required>
+        </fieldset>
+        <fieldset>
+          <legend class="pop-up-legend">Ваш e-mail:</legend>
+          <label class="visually-hidden" for="feedback-email">Поле ввода адреса электронной почты</label>
+          <input class="pop-up-input feedback-input-email" name="feedback-email" id="feedback-email" type="email" placeholder="email@example.com" required>
+        </fieldset>
+        <fieldset>
+          <legend class="pop-up-legend">Текст письма:</legend>
+          <label class="visually-hidden" for="feedback-message">Поле ввода сообщения</label>
+          <textarea class="feedback-input-message pop-up-input" id="feedback-message" name="feedback-message" placeholder="В свободной форме" required></textarea>
+        </fieldset>
+        <button class="button-basic">Отправить</button>
+      </form>
+      <button class="pop-up-feedback-close" type="button" aria-label="Закрыть форму обратной связи"></button>
+    </section>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0yaSljQEoO6kf1SdONYgZgHqZJeg9RoA&callback=initMap"></script>
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
