@@ -14,18 +14,18 @@
           <a class="header-logo" href="index.html" aria-label="Переход на главную страницу интернет-магазина гаджетов «Девайс»">
             <img src="img/logo-header.svg" alt="Логотип интернет-магазин гаджетов «Девайс»" width="163" height="35">
           </a>
-          <ul class="nav-first-row">
-            <li>
-              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <label for="input-search" class="visually-hidden">Поиск по сайту</label>
-                <input type="search" class="input-search" id="input-search" name="input-search" placeholder="Поиск по сайту" required>
-                <button class="input-search-submit" type="submit" name="input-search-submit">Найти</button>
-              </form>
-            </li>
-            <li class="header-login-cart-item"><a class="header-menu-link header-login" href="blank.html">Валентин Петухов</a><a class="header-menu-link-exit" href="blank.html">Выйти</a></li>
-            <li class="header-login-cart-item"><a class="header-menu-link header-compare" href="blank.html">Сравнить</a></li>
-            <li class="header-login-cart-item"><a class="header-menu-link header-cart" href="blank.html">Корзина</a></li>
-          </ul>
+          <div class="nav-first-row">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label for="input-search" class="visually-hidden">Поиск по сайту</label>
+              <input type="search" class="input-search" id="input-search" name="input-search" placeholder="Поиск по сайту" required>
+              <button class="input-search-submit" type="submit" name="input-search-submit">Найти</button>
+            </form>
+            <ul class="header-login-cart">
+              <li class="header-login-cart-item"><a class="header-menu-link header-login" href="blank.html">Валентин Петухов</a><a class="header-menu-link-exit" href="blank.html">Выйти</a></li>
+              <li class="header-login-cart-item"><a class="header-menu-link header-compare" href="blank.html">Сравнить</a></li>
+              <li class="header-login-cart-item"><a class="header-menu-link header-cart" href="blank.html">Корзина</a></li>
+            </ul>
+          </div>
           <ul class="nav-second-row">
             <li class="menu-catalog">
               <a class="nav-second-row-link menu-catalog-link" href="catalog.html">Каталог товаров</a>
@@ -138,7 +138,7 @@
               </fieldset>
               <fieldset class="filter-bluetooth">
                 <legend class="filter-legend">Bluetooth</legend>
-                <ul class="fliter-bluetooth-options">
+                <ul class="filter-bluetooth-options">
                   <li>
                     <input class="input-radio-bluetooth" type="radio" id="bluetooth-yes" value="yes" name="bluetooth" checked>
                     <label class="label-radio-bluetooth" for="bluetooth-yes">Есть</label></li>
@@ -230,7 +230,7 @@
             <img src="img/logo-footer.svg" alt="Логотип интернет-магазин гаджетов «Девайс»" width="163" height="35">
           </a>
           <ul class="footer-login-cart">
-            <li><a class="footer-menu-link footer-login" href="blank.html">Валентин Петухов</a><a class="footer-menu-link footer-menu-link-exit" href="blank.html">Выйти</a></li>
+            <li><a class="footer-menu-link footer-login footer-menu-logged-in" href="blank.html">Валентин Петухов</a><a class="footer-menu-link footer-menu-link-exit" href="blank.html">Выйти</a></li>
             <li><a class="footer-menu-link footer-compare" href="blank.html">Сравнить</a></li>
             <li><a class="footer-menu-link footer-cart" href="blank.html">Корзина</a></li>
           </ul>

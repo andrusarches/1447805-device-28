@@ -15,18 +15,18 @@
           <a class=" header-logo">
             <img src="img/logo-header.svg" alt="Логотип интернет-магазин гаджетов «Девайс»" width="163" height="35">
           </a>
-          <ul class="nav-first-row">
-            <li>
-              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <label for="input-search" class="visually-hidden">Поиск по сайту</label>
-                <input type="search" class="input-search" id="input-search" name="input-search" placeholder="Поиск по сайту" required>
-                <button class="input-search-submit" type="submit" name="input-search-submit">Найти</button>
-              </form>
-            </li>
-            <li class="header-login-cart-item"><a class="header-menu-link header-login" href="blank.html">Войти</a></li>
-            <li class="header-login-cart-item"><a class="header-menu-link header-compare" href="blank.html">Сравнить</a></li>
-            <li class="header-login-cart-item"><a class="header-menu-link header-cart" href="blank.html">Корзина</a></li>
-          </ul>
+          <div class="nav-first-row">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label for="input-search" class="visually-hidden">Поиск по сайту</label>
+              <input type="search" class="input-search" id="input-search" name="input-search" placeholder="Поиск по сайту" required>
+              <button class="input-search-submit" type="submit" name="input-search-submit">Найти</button>
+            </form>
+            <ul class="header-login-cart">
+              <li class="header-login-cart-item"><a class="header-menu-link header-login" href="blank.html">Войти</a></li>
+              <li class="header-login-cart-item"><a class="header-menu-link header-compare" href="blank.html">Сравнить</a></li>
+              <li class="header-login-cart-item"><a class="header-menu-link header-cart" href="blank.html">Корзина</a></li>
+            </ul>
+          </div>
           <ul class="nav-second-row">
             <li class="menu-catalog">
               <a class="nav-second-row-link menu-catalog-link" href="catalog.html">Каталог товаров</a>
@@ -56,27 +56,24 @@
         <h1 class="visually-hidden">Главная страница интернет-магазина гаджетов «Девайс»</h1>
         <section class="promo-slider">
           <h2 class="visually-hidden">Промо-слайдер товаров интернет-магазина гаджетов «Девайс»</h2>
-          <input class="slider-input slider-input-1" type="radio" id="promo-slide-1" name="promo-slider" checked>
-          <input class="slider-input slider-input-2" type="radio" id="promo-slide-2" name="promo-slider">
-          <input class="slider-input slider-input-3" type="radio" id="promo-slide-3" name="promo-slider">
-          <ul class="promo-slider-labels">
-            <li><label class="promo-slider-label slider-label-1" for="promo-slide-1" aria-label="Первый промо-слайд с товаром"></label></li>
-            <li><label class="promo-slider-label slider-label-2" for="promo-slide-2" aria-label="Второй промо-слайд с товаром"></label></li>
-            <li><label class="promo-slider-label slider-label-3" for="promo-slide-3" aria-label="Третий промо-слайд с товаром"></label></li>
+          <ul class="promo-slider-buttons">
+            <li><button class="promo-slider-button promo-slider-button-active" aria-label="Первый промо-слайд с товаром"></button></li>
+            <li><button class="promo-slider-button" aria-label="Второй промо-слайд с товаром"></button></li>
+            <li><button class="promo-slider-button" aria-label="Третий промо-слайд с товаром"></button></li>
           </ul>
-          <article class="promo-slider-article slider-1">
+          <div class="promo-slider-option promo-slider-1 promo-slider-option-active">
             <h3 class="visually-hidden">Селфи-палка длиной 8 метров</h3>
             <img src="img/slider-1.png" width="384" height="486" alt="Фотография товара - Селфи-палка длиной 8 метров">
             <div class="promo-slider-item">
               <span class="promo-slider-rectangle"></span>
-              <p class="gilroy-bold promo-item-slogan">
+              <p class="promo-item-slogan">
                 Делай селфи, как&nbsp;Бен&nbsp;Стиллер!
               </p>
               <p class="promo-item-description">
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь&nbsp;(Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
               <a href="blank.html" class="button-basic button-basic-slider">ПОДРОБНЕЕ</a>
-              <table class="promo-item-features gilroy-light">
+              <table class="promo-item-features">
                 <tr>
                   <td>8,5 м</td>
                   <td>5 кг</td>
@@ -88,22 +85,22 @@
                   <th>Материал</th>
                 </tr>
               </table>
-              <span class="promo-item-number gilroy-bold">01</span>
+              <span class="promo-item-number">01</span>
             </div>
-          </article>
-          <article class="promo-slider-article slider-2">
+          </div>
+          <div class="promo-slider-option promo-slider-2">
             <h3 class="visually-hidden">Фитнес-браслет</h3>
             <img src="img/slider-2.png" width="345" height="458" alt="Фотография товара - Фитнес-браслет">
             <div class="promo-slider-item">
               <span class="promo-slider-rectangle"></span>
-              <p class="gilroy-bold promo-item-slogan">
+              <p class="promo-item-slogan">
                 Худеем<br>правильно!
               </p>
               <p class="promo-item-description">
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не&nbsp;пропускать занятия и соблюдать диету.
               </p>
-              <a href="blank.html" class="button-basic">ПОДРОБНЕЕ</a>
-              <table class="promo-item-features gilroy-light">
+              <a href="blank.html" class="button-basic button-basic-slider">ПОДРОБНЕЕ</a>
+              <table class="promo-item-features">
                 <tr>
                   <td>48 часов</td>
                 </tr>
@@ -111,22 +108,22 @@
                   <th>Без подзарядки</th>
                 </tr>
               </table>
-              <span class="promo-item-number gilroy-bold">02</span>
+              <span class="promo-item-number">02</span>
             </div>
-          </article>
-          <article class="promo-slider-article slider-3">
+          </div>
+          <div class="promo-slider-option promo-slider-3">
             <h3 class="visually-hidden">Квадрокоптер</h3>
             <img src="img/slider-3.png" width="526" height="334" alt="Фотография товара - Квадрокоптер с лазером">
             <div class="promo-slider-item">
               <span class="promo-slider-rectangle"></span>
-              <p class="gilroy-bold promo-item-slogan">
+              <p class="promo-item-slogan">
                 Порхает как бабочка, жалит как пчела!
               </p>
               <p class="promo-item-description">
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером, замаскированным под стандартную камеру.
               </p>
-              <a href="blank.html" class="button-basic">ПОДРОБНЕЕ</a>
-              <table class="promo-item-features gilroy-light">
+              <a href="blank.html" class="button-basic button-basic-slider">ПОДРОБНЕЕ</a>
+              <table class="promo-item-features">
                 <tr>
                   <td>800 м</td>
                   <td>50 м</td>
@@ -136,60 +133,48 @@
                   <th>Радиус поражения</th>
                 </tr>
               </table>
-              <span class="promo-item-number gilroy-bold">03</span>
+              <span class="promo-item-number">03</span>
             </div>
-          </article>
+          </div>
         </section>
         <section class="item-types-selection">
           <h2 class="visually-hidden">Типы товаров, представленных в каталоге интернет-магазина гаджетов «Девайс»</h2>
           <ul class="item-types">
             <li class="item-type">
-              <article>
                 <a class="item-type-link" href="blank.html">
                   <div class="item-type-icon icon-vr"></div>
                   <h3 class="item-type-name">Виртуальная реальность</h3>
                 </a>
-              </article>
             </li>
             <li class="item-type">
-              <article>
                 <a class="item-type-link" href="blank.html">
                   <div class="item-type-icon icon-selfie"></div>
                   <h3 class="item-type-name">Моноподы для&nbsp;селфи</h3>
                 </a>
-              </article>
             </li>
             <li class="item-type">
-              <article>
                 <a class="item-type-link" href="blank.html">
                   <div class="item-type-icon icon-action-camera"></div>
                   <h3 class="item-type-name">Экшн-камеры</h3>
                 </a>
-              </article>
             </li>
             <li class="item-type">
-              <article>
                 <a class="item-type-link" href="blank.html">
                   <div class="item-type-icon icon-fitness-bracelet"></div>
                   <h3 class="item-type-name item-type-fitness">Фитнес-браслеты</h3>
                 </a>
-              </article>
             </li>
             <li class="item-type">
-              <article>
                 <a class="item-type-link" href="blank.html">
                   <div class="item-type-icon icon-smartwatch"></div>
                   <h3 class="item-type-name">Умные часы</h3>
                 </a>
-              </article>
             </li>
             <li class="item-type">
-              <article>
                 <a class="item-type-link" href="blank.html">
                   <div class="item-type-icon icon-quadrocopter"></div>
                   <h3 class="item-type-name">Квадрокоптеры</h3>
                 </a>
-              </article>
             </li>
           </ul>
         </section>
@@ -197,23 +182,20 @@
       <section class="business-services">
         <h2 class="visually-hidden">Сервис-услуги интернет-магазина гаджетов «Девайс»</h2>
         <div class="content-wrapper">
-          <input class="services-input service-input-1" type="radio" id="service-option-1" name="service-slides" checked>
-          <input class="services-input service-input-2" type="radio" id="service-option-2" name="service-slides">
-          <input class="services-input service-input-3" type="radio" id="service-option-3" name="service-slides">
           <ul class="services-selector">
-            <li><label class="service-option service-option-1" for="service-option-1"><span>ДОСТАВКА</span></label></li>
-            <li><label class="service-option service-option-2" for="service-option-2"><span class="button-basic">ГАРАНТИЯ</span></label></li>
-            <li><label class="service-option service-option-3" for="service-option-3"><span class="button-basic">КРЕДИТ</span></label></li>
+            <li class="service-option service-option-active"><button class="service-button service-button-1 service-button-active" href="blank.html">ДОСТАВКА</button></li>
+            <li class="service-option"><button href="blank.html" class="service-button service-button-2 button-basic">ГАРАНТИЯ</button></li>
+            <li class="service-option"><button href="blank.html" class="service-button service-button-3 button-basic">КРЕДИТ</button></li>
           </ul>
-          <article class="service-description service-description-1">
+          <article class="service-description service-description-delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду&nbsp;совершенно&nbsp;бесплатно! Ведь&nbsp;мы&nbsp;неплохо заработаем,&nbsp;поднимая&nbsp;его&nbsp;на ваш этаж.</p>
           </article>
-          <article class="service-description service-description-2">
+          <article class="service-description service-description-warranty service-description-active">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар,&nbsp;не&nbsp;дом,&nbsp;конечно&nbsp;же.</p>
           </article>
-          <article class="service-description service-description-3">
+          <article class="service-description service-description-credit">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия&nbsp;кредита.&nbsp;Выгодные&nbsp;для нашего банка, разумеется.</p>
           </article>
