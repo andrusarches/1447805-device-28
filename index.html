@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин гаджетов «Девайс»</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
 
@@ -35,7 +35,7 @@
                   <li><a href="blank.html" class="link-basic-opacity">Виртуальная реальность</a></li>
                   <li><a href="blank.html" class="link-basic-opacity">Фитнес-браслеты</a></li>
                   <li><a href="blank.html" class="link-basic-opacity">Квадрокоптер</a></li>
-                  <li><a href="blank.html" class="link-basic-opacity">Моноподы для селфи</a></li>
+                  <li><a href="catalog.html" class="link-basic-opacity">Моноподы для селфи</a></li>
                   <li><a href="blank.html" class="link-basic-opacity">Умные часы</a></li>
                   <li><a href="blank.html" class="link-basic-opacity">Экшн&#8209;камеры</a></li>
                 </ul>
@@ -50,16 +50,15 @@
     </div>
 
     <!-- Page Main -->
-
     <main class="page-main">
       <div class="content-wrapper">
         <h1 class="visually-hidden">Главная страница интернет-магазина гаджетов «Девайс»</h1>
         <section class="promo-slider">
           <h2 class="visually-hidden">Промо-слайдер товаров интернет-магазина гаджетов «Девайс»</h2>
           <ul class="promo-slider-buttons">
-            <li><button class="promo-slider-button promo-slider-button-active" aria-label="Первый промо-слайд с товаром"></button></li>
-            <li><button class="promo-slider-button" aria-label="Второй промо-слайд с товаром"></button></li>
-            <li><button class="promo-slider-button" aria-label="Третий промо-слайд с товаром"></button></li>
+            <li><button class="promo-slider-button promo-slider-button-active" type="button" aria-label="Первый промо-слайд с товаром"></button></li>
+            <li><button class="promo-slider-button" type="button" aria-label="Второй промо-слайд с товаром"></button></li>
+            <li><button class="promo-slider-button" type="button" aria-label="Третий промо-слайд с товаром"></button></li>
           </ul>
           <div class="promo-slider-option promo-slider-1 promo-slider-option-active">
             <h3 class="visually-hidden">Селфи-палка длиной 8 метров</h3>
@@ -183,9 +182,9 @@
         <h2 class="visually-hidden">Сервис-услуги интернет-магазина гаджетов «Девайс»</h2>
         <div class="content-wrapper">
           <ul class="services-selector">
-            <li class="service-option service-option-active"><button class="service-button service-button-1 service-button-active" href="blank.html">ДОСТАВКА</button></li>
-            <li class="service-option"><button href="blank.html" class="service-button service-button-2 button-basic">ГАРАНТИЯ</button></li>
-            <li class="service-option"><button href="blank.html" class="service-button service-button-3 button-basic">КРЕДИТ</button></li>
+            <li class="service-option service-option-active"><button class="service-button service-button-1 service-button-active" type="button">ДОСТАВКА</button></li>
+            <li class="service-option"><button class="service-button service-button-2 button-basic" type="button">ГАРАНТИЯ</button></li>
+            <li class="service-option"><button class="service-button service-button-3 button-basic" type="button">КРЕДИТ</button></li>
           </ul>
           <article class="service-description service-description-delivery">
             <h3>Доставка</h3>
@@ -236,8 +235,8 @@
           <section class="contacts">
             <h2 class="about-contacts-heading">Контакты</h2>
             <p class="about-contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a class="contacts-map" aria-label="Кнопка-картинка с расположением магазина Девайс на карте по адресу г.Москва, ул. Строителей, д. 15"></a>
-            <a href="blank.html" class="button-basic feedback-button">НАПИШИТЕ НАМ</a>
+            <a class="contacts-map" aria-label="Кнопка-картинка с расположением магазина «Девайс» на карте по адресу г.Москва, ул. Строителей, д. 15"></a>
+            <a href="blank.html" class="button-basic feedback-button" aria-label="Открыть окно обратной связи">НАПИШИТЕ НАМ</a>
           </section>
         </div>
       </div>
@@ -313,11 +312,11 @@
           <label class="visually-hidden" for="feedback-message">Поле ввода сообщения</label>
           <textarea class="feedback-input-message pop-up-input" id="feedback-message" name="feedback-message" placeholder="В свободной форме" required></textarea>
         </fieldset>
-        <button class="button-basic">Отправить</button>
+        <button class="button-basic" type="button">Отправить</button>
       </form>
       <button class="pop-up-feedback-close" type="button" aria-label="Закрыть форму обратной связи"></button>
     </section>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0yaSljQEoO6kf1SdONYgZgHqZJeg9RoA&callback=initMap"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
