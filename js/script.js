@@ -13,6 +13,13 @@ var isStorageSuportFeedback = true;
 var storageFeedbackName = "";
 var storageFeedbackEmail = "";
 
+function initMap() {
+  var device = {lat:55.687031, lng:37.529618};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 17, center: device});
+  var marker = new google.maps.Marker({position: device, map: map});
+}
+
 try {
   storageFeedbackName = localStorage.getItem("FeedbackName");
   storageFeedbackEmail = localStorage.getItem("FeedbackEmail");
@@ -20,12 +27,9 @@ try {
   isStorageSuportFeedback = false;
 }
 
-function initMap() {
-  var device = {lat:55.687031, lng:37.529618};
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 17, center: device});
-  var marker = new google.maps.Marker({position: device, map: map});
-}
+feedbackName.required = false;
+feedbackEmail.required = false;
+feedbackMessage.required = false;
 
 feedbackButton.addEventListener("click",
   function(evt) {
@@ -42,18 +46,57 @@ feedbackButton.addEventListener("click",
   }
 });
 
-feedbackForm.addEventListener("submit", function(evt) {
+feedbackForm.addEventListener("submit", function (evt) {
+  if (!feedbackName.value || !feedbackEmail.value || !feedbackMessage.value) {
+    evt.preventDefault();
+    popupFeedback.classList.remove("pop-up-error");
+    popupFeedback.offsetWidth = popupFeedback.offsetWidth;
+    popupFeedback.classList.add("pop-up-error");
+      if (!feedbackName.value) {
+        feedbackName.focus();
+      }
+      if (feedbackName.value && (!feedbackEmail.value || !feedbackMessage.value)) {
+        feedbackEmail.focus();
+      }
+      if ((feedbackName.value && feedbackEmail.value) && !feedbackMessage.value) {
+        feedbackMessage.focus();
+      }
+      if (!feedbackName.value) {
+        feedbackName.classList.add("pop-up-input-invalid");
+      }
+      if (!feedbackEmail.value) {
+        feedbackEmail.classList.add("pop-up-input-invalid");
+      }
+      if (!feedbackMessage.value) {
+        feedbackMessage.classList.add("pop-up-input-invalid");
+      }
+    } else {
+        if (isStorageSuportFeedback) {
+          localStorage.setItem("FeedbackName", feedbackName.value);
+          localStorage.setItem("FeedbackEmail", feedbackEmail.value);
+        }
+      }
+});
 
-  if (isStorageSuportFeedback) {
-    localStorage.setItem("FeedbackName", feedbackName.value);
-    localStorage.setItem("FeedbackEmail", feedbackEmail.value);
-  }
+feedbackName.addEventListener("focusout", function (evt) {
+  if (feedbackName.value && feedbackName.classList.contains("pop-up-input-invalid"))
+    feedbackName.classList.remove("pop-up-input-invalid");
+});
+
+feedbackEmail.addEventListener("focusout", function (evt) {
+  if (feedbackEmail.value && feedbackEmail.classList.contains("pop-up-input-invalid"))
+    feedbackEmail.classList.remove("pop-up-input-invalid");
+});
+
+feedbackMessage.addEventListener("focusout", function (evt) {
+  if (feedbackMessage.value && feedbackMessage.classList.contains("pop-up-input-invalid"))
+    feedbackMessage.classList.remove("pop-up-input-invalid");
 });
 
 feedbackClose.addEventListener("click",
   function(evt) {
-    evt.preventDefault();
     popupFeedback.classList.remove("pop-up-feedback-active");
+    popupFeedback.classList.remove("pop-up-error");
     popupOverlay.classList.remove("pop-up-overlay-active");
 });
 
