@@ -1,7 +1,8 @@
 var popupMap = document.querySelector(".pop-up-map");
 var popupFeedback = document.querySelector(".pop-up-feedback");
 var feedbackButton = document.querySelector(".feedback-button");
-var feedbackClose = popupFeedback.querySelector(".pop-up-feedback-close");
+var feedbackClose = popupFeedback.querySelector(".pop-up-close");
+var mapClose = popupMap.querySelector(".pop-up-close");
 var popupOverlay = document.querySelector(".pop-up-overlay");
 var mapButton = document.querySelector(".contacts-map");
 var feedbackForm = popupFeedback.querySelector("form");
@@ -105,6 +106,12 @@ mapButton.addEventListener("click",
     evt.preventDefault();
     popupMap.classList.add("pop-up-map-active");
     popupOverlay.classList.add("pop-up-overlay-active");
+});
+
+mapClose.addEventListener("click",
+  function(evt) {
+    popupMap.classList.remove("pop-up-map-active");
+    popupOverlay.classList.remove("pop-up-overlay-active");
 });
 
 window.addEventListener("keydown", function(evt) {
