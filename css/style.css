@@ -37,8 +37,8 @@
   font-style: normal;
   font-weight: 300;
   src: local("Gilroy-Light"),
-       url("../img/gilroy-light.woff2") format("woff2"),
-       url("../img/gilroy-light.woff") format("woff");
+       url("../fonts/gilroy-light.woff2") format("woff2"),
+       url("../fonts/gilroy-light.woff") format("woff");
 }
 
 @font-face {
@@ -46,8 +46,8 @@
   font-style: normal;
   font-weight: 800;
   src: local("Gilroy-ExtraBold"),
-       url("../img/gilroy-extrabold.woff2") format("woff2"),
-       url("../img/gilroy-extrabold.woff") format("woff");
+       url("../fonts/gilroy-extrabold.woff2") format("woff2"),
+       url("../fonts/gilroy-extrabold.woff") format("woff");
 }
 
 /* Open Sans */
@@ -57,8 +57,8 @@
   font-style: normal;
   font-weight: 300;
   src: local("Open Sans Light"), local("OpenSans-Light"),
-       url("../img/opensans-light.woff2") format("woff2"),
-       url("../img/opensans-light.woff") format("woff");
+       url("../fonts/opensans-light.woff2") format("woff2"),
+       url("../fonts/opensans-light.woff") format("woff");
 }
 
 @font-face {
@@ -66,8 +66,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans Regular"), local("OpenSans-Regular"),
-       url("../img/opensans-regular.woff2") format("woff2"),
-       url("../img/opensans-regular.woff") format("woff");
+       url("../fonts/opensans-regular.woff2") format("woff2"),
+       url("../fonts/opensans-regular.woff") format("woff");
 }
 
 /* Keyframes */
