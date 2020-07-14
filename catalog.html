@@ -68,24 +68,21 @@
           </div>
           <div class="filter-top-right">
             <h2 class="filter-heading">Сортировка:</h2>
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <ul class="radio-sorting-list">
-                <li>
-                  <input class="filter-radio-input" type="radio" id="radio-by-price" name="radio-sorting" value="by-price" checked>
-                  <label class="filter-radio-label" for="radio-by-price">По цене</label>
-                </li>
-                <li>
-                  <input class="filter-radio-input" type="radio" id="radio-by-type" name="radio-sorting" value="by-type">
-                  <label class="filter-radio-label" for="radio-by-type">По типу</label>
-                </li>
-                <li>
-                  <input class="filter-radio-input" type="radio" id="radio-by-popularity" name="radio-sorting" value="by-popularity">
-                  <label class="filter-radio-label" for="radio-by-popularity">По популярности</label>
-                </li>
-              </ul>
-            </form>
-            <button type="button" class="filter-arrow filter-arrow-inactive filter-arrow-up" aria-label="Переключение положения сортировки влево"></button>
-            <button type="button" class="filter-arrow filter-arrow-down" aria-label="Переключение положения сортировки вправо"></button>
+            <ul class="catalog-sorting-options">
+              <li>
+                <a href="blank.html" class="sorting-option sorting-option-active" aria-label="Сортировка товаров в каталоге по цене">По цене</a>
+              </li>
+              <li>
+                <a href="blank.html" class="sorting-option" aria-label="Сортировка товаров в каталоге по типу">По типу</a>
+              </li>
+              <li>
+                <a href="blank.html" class="sorting-option" aria-label="Сортировка товаров в каталоге по популярности">По популярности</a>
+              </li>
+            </ul>
+            <ul class="catalog-sorting-arrows">
+              <li><a href="blank.html" class="sorting-arrow sorting-arrow-inactive sorting-arrow-up" aria-label="Переключение положения сортировки влево"></a></li>
+              <li><a href="blank.html" class="sorting-arrow sorting-arrow-down" aria-label="Переключение положения сортировки вправо"></a></li>
+            </ul>
           </div>
         </div>
       </div>
